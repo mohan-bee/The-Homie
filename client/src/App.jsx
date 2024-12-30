@@ -2,9 +2,10 @@ import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Components/Home'
 import Editor from './Components/Editor'
-import Admin from './Components/admin'
+
 import './App.css'
 import Page from './Components/Page'
+import Admin from './Components/Admin'
 const App = () => {
   return (
     <BrowserRouter>
