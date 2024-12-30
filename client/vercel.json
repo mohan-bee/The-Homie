@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "/"
+        "destination": "https://the-homie.onrender.com/*"
       }
     ]
 }
