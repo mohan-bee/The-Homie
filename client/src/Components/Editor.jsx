@@ -4,7 +4,7 @@ import 'react-quill/dist/quill.snow.css';
 import './Editor.css';
 import axios from 'axios';
 
-// Add the modules for the image upload and font selection options
+
 const Editor = () => {
     const [title, setTitle] = useState('');
     const [value, setValue] = useState('');
