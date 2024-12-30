@@ -1,0 +1,24 @@
+.container-editor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor, .preview{
+    width: 50%;
+}
+.preview{
+    padding: 0 10px;
+    padding-top:50px ;
+    border: 1px solid rgba(128, 128, 128, 0.441);
+}
+.title{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.title input{
+    margin: 0 10px;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 3px;
+}

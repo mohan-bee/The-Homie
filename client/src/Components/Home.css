@@ -1,0 +1,17 @@
+
+h1{
+    margin: 20px;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.post{
+    background-color: bisque;
+    margin: 10px 0;
+    padding: 20px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}

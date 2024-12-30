@@ -1,0 +1,20 @@
+
+
+.admin-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding: 0 30px;
+}
+.admin-post button{
+    background-color: black;
+    border: 2px solid beige;
+    padding: 10px;
+    box-shadow: 0 0 5px 0px rgba(128, 128, 128, 0.162);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
