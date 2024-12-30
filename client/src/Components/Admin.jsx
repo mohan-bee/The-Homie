@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import './Admin.css'
+import './AdminPage.css'
 
-const Admin = () => {
+const AdminPage = () => {
     const [posts, setPosts] = useState(null)
     const fetch = async() =>{
         let res = await axios.get('https://the-homie.onrender.com/posts')
@@ -17,7 +17,7 @@ const Admin = () => {
     }
   return (
     <div>
-        <h1>Admin</h1>
+        <h1>AdminPage</h1>
         <div className="posts">
         {posts?.slice().reverse().map(post => (
             <div className="post admin-post"key={post._id}>
@@ -30,4 +30,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+export default AdminPage

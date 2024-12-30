@@ -5,7 +5,8 @@ import Editor from './Components/Editor'
 
 import './App.css'
 import Page from './Components/Page'
-import Admin from './Components/Admin'
+import AdminPage from './Components/AdminPage'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,7 +14,7 @@ const App = () => {
       <Route index element={<Home/>} />
       <Route path='post/:id' element={<Page/>} />
       <Route path='/admin/new' element={<Editor/>} />
-      <Route path='/admin' element={<Admin/>} />
+      <Route path='/admin' element={<AdminPage/>} />
 
     </Routes>
     </BrowserRouter>
