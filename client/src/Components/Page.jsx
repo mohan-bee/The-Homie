@@ -9,7 +9,7 @@ const Page = () => {
 
   const fetchPost = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/post/${id}`);
+      const res = await axios.get(`https://the-homie.onrender.com/post/${id}`);
       setPost(res.data);
     } catch (err) {
       console.error('Error fetching post:', err);

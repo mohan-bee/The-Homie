@@ -5,14 +5,14 @@ import './Admin.css'
 const Admin = () => {
     const [posts, setPosts] = useState(null)
     const fetch = async() =>{
-        let res = await axios.get('http://localhost:3000/posts')
+        let res = await axios.get('https://the-homie.onrender.com/posts')
         setPosts(res.data)
     }
     useEffect(() =>{
         fetch()
     }, [posts])
     const deletePost = async (id) =>{
-        await axios.delete(`http://localhost:3000/admin/del/${id}`)
+        await axios.delete(`https://the-homie.onrender.com/admin/del/${id}`)
         alert('post deleted successfully')
     }
   return (

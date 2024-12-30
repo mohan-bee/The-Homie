@@ -10,7 +10,7 @@ const Editor = () => {
     const [value, setValue] = useState('');
 
     const handleUpload = async () => {
-        await axios.post('http://localhost:3000/admin/new', { title, content: value });
+        await axios.post('https://the-homie.onrender.com/admin/new', { title, content: value });
         alert('Uploaded successfully');
         setTitle('');
         setValue('');
