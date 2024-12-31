@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "https://the-homie.onrender.com/*"
+        "destination": "http://localhost:3000/*"
       }
     ]
 }

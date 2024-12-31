@@ -40,7 +40,7 @@ const upload = multer({ storage: storage });
 
 
 app.post('/upload', upload.single('file'), (req, res) => {
-    res.json({ url: `https://the-homie.onrender.com/uploads/${req.file.filename}` });
+    res.json({ url: `http://localhost:3000/uploads/${req.file.filename}` });
 });
 
 
@@ -83,14 +83,14 @@ app.get('/post/:id', async (req, res) => {
 
 
 app.post('/admin/new', async (req, res) => {
-    const { title, content } = req.body;
+    const { title,coverImage, content } = req.body;
 
     if (!title || !content) {
         return res.status(400).json({ error: 'Title and Content are required' });
     }
 
     try {
-        const newPost = new Post({ title, content });
+        const newPost = new Post({ title,coverImage,content });
         await newPost.save();
         res.status(201).json({ message: 'Post created successfully', post: newPost });
     } catch (err) {

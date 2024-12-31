@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Editor from './Components/Editor';
 import './App.css';
@@ -8,14 +8,14 @@ import AdminPage from './Components/AdminPage';
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="post/:id" element={<Page />} />
         <Route path="admin/new" element={<Editor />} />
         <Route path="admin" element={<AdminPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
