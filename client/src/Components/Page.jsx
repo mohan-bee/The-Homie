@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'; 
 import './Page.css';
 import Navbar from './Navbar';
+import Loader from './Loader';
 
 const Page = () => {
   const { id } = useParams(); 
@@ -39,7 +40,7 @@ const Page = () => {
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
       ) : (
-        <p>Loading...</p>
+        <Loader />
       )}
     </div>
   );

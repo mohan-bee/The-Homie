@@ -40,7 +40,7 @@ const upload = multer({ storage: storage });
 
 
 app.post('/upload', upload.single('file'), (req, res) => {
-    res.json({ url: `http://localhost:3000/uploads/${req.file.filename}` });
+    res.json({ url: `https://the-homie.onrender.com/uploads/${req.file.filename}` });
 });
 
 
