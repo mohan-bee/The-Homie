@@ -9,7 +9,7 @@ const Home = () => {
 
   const fetch = async () => {
     try {
-      let res = await axios.get('http://localhost:3000/posts');
+      let res = await axios.get('https://the-homie.onrender.com/posts');
       setPosts(res.data);
     } catch (error) {
       console.error('Error fetching posts:', error);
