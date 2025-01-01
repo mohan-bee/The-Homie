@@ -38,3 +38,16 @@
     color: gray;
     margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+    .content{
+        font-size: 10px;
+    }
+    .post{
+        height: 150px;
+    }
+    .post img{
+        width: 100px;
+        height: 100px;
+    }
+}
